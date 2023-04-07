@@ -13,15 +13,24 @@ Windows系统通过正规渠道安装需要收费
 使用脚本前请执行以下命令确保必须的软件已经安装
 
 # CentOS 与 RedHat
+ ```shell
 yum install -y xz openssl gawk file wget
+ ```
 
 # Debian 与 Ubuntu
+  ```shell
 apt-get install -y xz-utils openssl gawk file
-下载并执行安装脚本
+ ```
+
+# 下载并执行安装脚本
 #要挂代理(建议用这个脚本DD，答主用这个成功过，下面的那个不好说)
+  ```shell
 wget --no-check-certificate -qO AutoReinstall.sh 'http://git.io/AutoReinstall.sh' && bash AutoReinstall.sh
+  ```
 #国内可用
+  ```shell
 wget --no-check-certificate -O AutoReinstall.sh https://d.02es.com/AutoReinstall.sh && chmod a+x AutoReinstall.sh && bash AutoReinstall.sh
+  ```
 输入Y确认DD重装后自动获取IP，如果有特殊的设置则可输入N自行配置IP
 
 设定完IP后，选择自己想要的操作系统
@@ -31,8 +40,8 @@ wget --no-check-certificate -O AutoReinstall.sh https://d.02es.com/AutoReinstall
 
 还有超过2小时还没上线的话一般就是寄了，到控制台重开吧
 
-25个系统的默认密码：
-
+#25个系统的默认密码：
+  ```shell
 1、CentOS 7.7 (已关闭防火墙及SELinux，默认密码Pwd@CentOS)
 2、CentOS 7 (默认密码http://cxthhhhh.com)
 3、CentOS 8 (默认密码http://cxthhhhh.com)
@@ -59,7 +68,7 @@ wget --no-check-certificate -O AutoReinstall.sh https://d.02es.com/AutoReinstall
 24、Windows Server 2008 Lite (UEFI支持甲骨文)(默认密码nat.ee)
 25、Windows Server 2012 Lite (UEFI支持甲骨文)(默认密码nat.ee)
 99、自定义镜像
-
+  ```
 另外，欢迎知友们来光临我的小破站，这个是我搭的博客的链接
 
 Linux一键DD系统安装纯净版CentOS,Debian,Ubuntu,Windows等
